@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV Pelajar</title>
+    <style>
+        :root {
+            --primary: #610a0a;
+            --secondary: #182848;
+            --light: #f8f9fa;
+            --dark: #212529;
+            --accent: #ff6b6b;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: var(--dark);
+            margin: 0;
+            padding: 0;
+            background-color: #f5f7fa;
+        }
+        
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 30px;
+            background: white;
+            box-shadow: 0 0 20px rgba(0,0,0,0.1);
+            border-radius: 10px;
+        }
+        
+        header {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            margin-bottom: 30px;
+            padding-bottom: 20px;
+            border-bottom: 1px solid #eee;
+        }
+        
+        .profile-img {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-right: 30px;
+            border: 5px solid var(--primary);
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+        
+        .header-text {
+            flex: 1;
+            min-width: 250px;
+        }
+        
+        h1 {
+            color: var(--primary);
+            margin: 0 0 5px 0;
+            font-size: 28px;
+        }
+        
+        h2 {
+            color: var(--secondary);
+            margin: 0 0 20px 0;
+            font-size: 18px;
+            font-weight: normal;
+        }
+        
+        h3 {
+            color: var(--primary);
+            border-bottom: 2px solid var(--primary);
+            padding-bottom: 5px;
+            margin-top: 25px;
+            font-size: 20px;
+        }
+        
+        p {
+            margin: 10px 0;
+        }
+        
+        .contact-info {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+            margin-top: 15px;
+        }
+        
+        .contact-item {
+            display: flex;
+            align-items: center;
+            font-size: 14px;
+        }
+        
+        .icon {
+            margin-right: 8px;
+            color: var(--primary);
+        }
+        
+        .section {
+            margin-bottom: 25px;
+        }
+        
+        .education-item, .experience-item {
+            margin-bottom: 20px;
+        }
+        
+        .date {
+            font-style: italic;
+            color: #666;
+            font-size: 14px;
+        }
+        
+        .skills {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+        
+        .skill {
+            background-color: var(--primary);
+            color: white;
+            padding: 5px 10px;
+            border-radius: 20px;
+            font-size: 14px;
+        }
+        
+        @media (max-width: 600px) {
+            header {
+                flex-direction: column;
+                text-align: center;
+            }
+            
+            .profile-img {
+                margin-right: 0;
+                margin-bottom: 20px;
+            }
+            
+            .contact-info {
+                justify-content: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <img src="profile/profil.jpeg" alt="profile.jpeg" class="profile-img">
+            <div class="header-text">
+                <h1>Izdihar Alexander Mayeka</h1>
+                <h2>Pelajar SMK / 11 SIJA</h2>
+                <p>Sebagai pelajar yang bersemangat dan berdedikasi, saya memiliki minat yang kuat dalam Sistem Informasi Jaringan dan Aplikasi (SIJA). Saya selalu berusaha untuk mengembangkan keterampilan saya dan aktif berpartisipasi dalam kegiatan akademik maupun ekstrakurikuler.</p>
+                
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <span class="icon"></span>
+                        <span>2008-5-21</span>
+                    </div>
+                    <div class="contact-item">
+                        <span class="gender"></span>
+                        <span>Laki-Laki</span>
+                    </div>
+                    <div class="contact-item">
+                        <span class="icon">📍</span>
+                        <span>Tajinan jl.raya sumbersuko</span>
+                    </div>
+                </div>
+            </div>
+        </header>
+        
+        <div class="section">
+            <h3>pendidikan</h3>
+            <div class="education-item">
+                <strong>SMP Negeri 10 MALANG</strong>
+                <p class="date"></p>
+                <ul>
+                    <li>Pernah mengikuti  lomba Matematika tingkat kota</li>
+                    <li>Aktif dalam organisasi siswa dan kegiatan sekolah</li>
+                    <li>Bisa membuat animasi</li>
+                </ul>
+            </div>
+            
+            <div class="education-item">
+                <strong>SDN Tanjungrejo 3</strong>
+                <p class="date"></p>
+                <ul>
+                    <li>Mengikuti lomba renang</li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="section">
+            <h3>Kemampuan/karya</h3>
+            <div class="experience-item">
+                <strong>di biadang IT</strong>
+                <ul>
+                    <li>mampu menguasai bahasa pemrgraman dengan cepat</li>
+                     <li>dapat membuat website</li>
+                </ul>
+            </div>
+            
+            <div class="experience-item">
+                <strong>organisasi yang pernah di ikuti</strong>
+                <ul>
+                    <li>MPK di SMK 11 MALANG</li>
+                    <li>Eleven English Class (EEC) di SMK 11 MALANG</li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="section">
+            <h3>Keterampilan</h3>
+            <div class="skills">
+                <span class="skill">Microsoft Office</span>
+                <span class="skill">Bahasa Inggris</span>
+                <span class="skill">Kerja Tim</span>
+                <span class="skill">Manajemen Waktu</span>
+                <span class="skill">coding</span>
+            </div>
+        </div>
+
+        <div class="kepribadian">
+            <h3>kepribadian</h3>
+            <strong>tidak suka berkelompok terlalu banyak</strong>
+        </div>
+        
+     
+    </div>
+</body>
+</html>
